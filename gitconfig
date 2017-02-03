@@ -1,0 +1,65 @@
+[user]
+  name = Bassam Ismail
+  email = skippednote@gmail.com
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+
+[core]
+  excludesfile = /Users/skippednote/.gitignore_global
+  ; pager = diff-so-fancy | less --tabs=4 -RFX
+
+[help]
+  autocorrect = 1
+
+[commit]
+  template = /Users/skippednote/.gitmessage
+
+[push]
+  branch = current
+  default = current
+
+[pull]
+  branch = current
+  default = simple
+
+[blame]
+  date = short
+
+[credential]
+  helper = osxkeychain
+
+[github]
+  user = skippednote
+
+[alias]
+  a   = add
+  aa  = add --all
+  cl  = clone
+  c   = commit -v
+  cm  = commit -s -m
+  cam = commit -s -am
+  co  = checkout
+  cob = checkout -b
+  d   = diff
+  pu  = push
+  pl  = pull
+  pr  = pull --rebase
+  s   = status
+  sb  = status -sb
+  rv  = remote -v
+  rhh = reset --hard HEAD
+  rhs = reset --soft HEAD
+  rhm = reset --mixed HEAD
+  lp  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  bl  = branch -l
+  br  = branch -r
+  log = log --show-signature
+  cfd = clean -fd
+  cf = clean -f
+  ignore = update-index --assume-unchanged
+  fo = fetch origin

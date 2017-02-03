@@ -1,0 +1,16 @@
+function mcd
+  mkdir $argv[1]
+  cd $argv[1]
+end
+
+function rf
+  mv $argv[1] ~/.Trash
+end
+
+function phps
+  if count $argv > /dev/null
+    php -S 0.0.0.0:$argv[1]
+  else
+    php -S 0.0.0.0:8080  
+  end
+end
