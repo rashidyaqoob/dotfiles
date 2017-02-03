@@ -3,7 +3,6 @@ alias a "ls -alh"
 alias c 'clear'
 alias v 'vim'
 alias g "git"
-alias s "subl"
 
 alias d "cd ~/Code/personal/dotfiles"
 alias nn "cd ~/Dropbox/Notes"
