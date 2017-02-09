@@ -11,6 +11,20 @@ function phps
   if count $argv > /dev/null
     php -S 0.0.0.0:$argv[1]
   else
-    php -S 0.0.0.0:8080  
+    php -S 0.0.0.0:8080
   end
+end
+
+function phpenv
+  set -gx PATH \
+                /Applications/DevDesktop/php7_0/bin \
+                /Applications/DevDesktop/mysql/bin \
+                /Applications/DevDesktop/tools/vendor/bin \
+                $PATH
+end
+
+function postgres
+  set -gx PATH \
+                /Applications/Postgres.app/Contents/Versions/latest/bin \
+                $PATH
 end

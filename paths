@@ -1,9 +1,1 @@
-set -gx EDITOR "vim"
-
-set -gx PATH /Applications/DevDesktop/php7_0/bin \
-             /Applications/DevDesktop/mysql/bin \
-             /Applications/DevDesktop/tools/vendor/bin \
-             /usr/local/opt/go/libexec/bin \
-             $PATH
-
 set -gx GOPATH $HOME/go
