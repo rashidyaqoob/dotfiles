@@ -16,15 +16,25 @@ function phps
 end
 
 function phpenv
-  set -gx PATH \
-                /Applications/DevDesktop/php7_0/bin \
-                /Applications/DevDesktop/mysql/bin \
-                /Applications/DevDesktop/tools/vendor/bin \
+  if count $argv > /dev/null
+    set -gx PATH \
+		/Applications/MAMP/bin/php/php7.1.1/bin \
+                $HOME/.composer/vendor/bin \
                 $PATH
+  else
+    set -gx PATH \
+		/Applications/MAMP/bin/php/php7.0.15/bin \
+                $HOME/.composer/vendor/bin \
+                $PATH
+  end
 end
 
 function postgres
   set -gx PATH \
                 /Applications/Postgres.app/Contents/Versions/latest/bin \
                 $PATH
+end
+
+function gra
+  git remote add $argv[1] $argv[2]
 end

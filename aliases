@@ -1,24 +1,14 @@
 alias l "ls -lh"
 alias a "ls -alh"
 alias c 'clear'
-alias v 'vim'
 alias g "git"
+alias v "vim"
 
 alias d "cd ~/Code/personal/dotfiles"
-alias nn "cd ~/Dropbox/Notes"
 alias w 'cd ~/Code/work'
 alias p 'cd ~/Code/personal'
-alias pg 'cd ~/Code/playground'
+alias nn 'cd ~/Dropbox/notes'
 
 alias genkeys 'ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
 alias copykeys 'cat ~/.ssh/id_rsa.pub | pbcopy'
-alias ehosts "sudo nano /etc/hosts"
 alias path 'echo $PATH | tr ":" "\n"'
-
-alias npml "npm ls --depth=0"
-alias npmg "npm ls --depth=0 -g"
-
-alias tn "tmux new-session -s"
-alias ta "tmux attach-session -t"
-alias tl "tmux list-sessions"
-alias tk "tmux kill-session -t"
