@@ -18,12 +18,12 @@ end
 function phpenv
   if count $argv > /dev/null
     set -gx PATH \
-		/Applications/MAMP/bin/php/php7.1.1/bin \
+                /Applications/XAMPP/bin/  \
                 $HOME/.composer/vendor/bin \
                 $PATH
   else
     set -gx PATH \
-		/Applications/MAMP/bin/php/php7.0.15/bin \
+                /Applications/XAMPP/bin/  \
                 $HOME/.composer/vendor/bin \
                 $PATH
   end
@@ -37,4 +37,20 @@ end
 
 function gra
   git remote add $argv[1] $argv[2]
+end
+
+function grr
+  git remote remove $argv[1]
+end
+
+function getupstream
+  echo "rebasing upstream/$argv[1]"
+  git fetch upstream
+  git rebase upstream/$argv[1]
+end
+
+function getremote
+  echo "rebasing $argv[1]/$argv[2]"
+  git fetch $argv[1]
+  git rebase $argv[1]/$argv[2]
 end
