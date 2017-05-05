@@ -1,4 +1,6 @@
-set -gx GOPATH $HOME/go
+set -x FZF_DEFAULT_COMMAND 'pt -g "" --hidden --ignore .git'
 
 set -gx PATH \
+        /Applications/XAMPP/bin/  \
+        $HOME/.composer/vendor/bin \
         $PATH

@@ -16,17 +16,10 @@ function phps
 end
 
 function phpenv
-  if count $argv > /dev/null
-    set -gx PATH \
-                /Applications/XAMPP/bin/  \
-                $HOME/.composer/vendor/bin \
-                $PATH
-  else
-    set -gx PATH \
-                /Applications/XAMPP/bin/  \
-                $HOME/.composer/vendor/bin \
-                $PATH
-  end
+  set -gx PATH \
+              /Applications/XAMPP/bin/  \
+              $HOME/.composer/vendor/bin \
+              $PATH
 end
 
 function postgres
@@ -53,4 +46,13 @@ function getremote
   echo "rebasing $argv[1]/$argv[2]"
   git fetch $argv[1]
   git rebase $argv[1]/$argv[2]
+end
+
+function createdrupal
+	composer create-project \
+		drupal-composer/drupal-project:8.x-dev \
+		$argv[1] \
+		--prefer-dist \
+		--no-progress \
+		--no-interaction
 end
