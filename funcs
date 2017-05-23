@@ -1,58 +1,41 @@
-function mcd
-  mkdir $argv[1]
-  cd $argv[1]
-end
+function mcd {
+  mkdir $1
+  cd $1
+}
 
-function rf
-  mv $argv[1] ~/.Trash
-end
+function rf {
+  mv $1 ~/.Trash
+}
 
-function phps
-  if count $argv > /dev/null
-    php -S 0.0.0.0:$argv[1]
-  else
-    php -S 0.0.0.0:8080
-  end
-end
+function phps {
+  php -S 0.0.0.0:8080
+}
 
-function phpenv
-  set -gx PATH \
-              /Applications/XAMPP/bin/  \
-              $HOME/.composer/vendor/bin \
-              $PATH
-end
+function gra {
+  git remote add $1 $2
+}
 
-function postgres
-  set -gx PATH \
-                /Applications/Postgres.app/Contents/Versions/latest/bin \
-                $PATH
-end
+function grr {
+  git remote remove $1
+}
 
-function gra
-  git remote add $argv[1] $argv[2]
-end
-
-function grr
-  git remote remove $argv[1]
-end
-
-function getupstream
-  echo "rebasing upstream/$argv[1]"
+function getupstream {
+  echo "rebasing upstream/$1"
   git fetch upstream
-  git rebase upstream/$argv[1]
-end
+  git rebase upstream/$1
+}
 
-function getremote
-  echo "rebasing $argv[1]/$argv[2]"
-  git fetch $argv[1]
-  git rebase $argv[1]/$argv[2]
-end
+function getremote {
+  echo "rebasing $1/$2"
+  git fetch $1
+  git rebase $1/$2
+}
 
-function createdrupal
+function createdrupal {
 	composer create-project \
 		drupal-composer/drupal-project:8.x-dev \
-		$argv[1] \
+		$1 \
 		--prefer-dist \
 		--no-progress \
 		--no-interaction
-end
+}

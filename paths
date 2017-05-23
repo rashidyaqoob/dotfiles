@@ -1,5 +1,2 @@
-set -x GOPATH $HOME/go
-set -gx PATH \
-        /Applications/XAMPP/bin/  \
-        $HOME/.composer/vendor/bin \
-        $PATH
+export PATH=$PATH:/Applications/XAMPP/bin
+export PATH=$PATH:$HOME/.composer/vendor/bin

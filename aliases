@@ -1,20 +1,20 @@
-alias l "ls -lh"
-alias a "ls -alh"
-alias c 'clear'
-alias g "git"
-alias v "vim"
+alias l="ls -lh"
+alias a="ls -alh"
+alias c='clear'
+alias g="git"
+alias v="vim"
 
-alias d "cd ~/Code/personal/dotfiles"
-alias w 'cd ~/Code/work'
-alias p 'cd ~/Code/personal'
-alias nn 'cd ~/Dropbox/notes'
+alias d="cd ~/Code/personal/dotfiles"
+alias w='cd ~/Code/work'
+alias p='cd ~/Code/personal'
+alias nn='cd ~/Dropbox/notes'
 
-alias genkeys 'ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
-alias copykeys 'cat ~/.ssh/id_rsa.pub | pbcopy'
-alias path 'echo $PATH | tr ":" "\n"'
+alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
+alias copykeys='cat ~/.ssh/id_rsa.pub | pbcopy'
+alias path='echo $PATH | tr ":" "\n"'
 
-alias vu 'vagrant up'
-alias vh 'vagrant halt'
-alias vp 'vagrant provision'
-alias vd 'vagrant destroy'
-alias vup 'vagrant up --provision'
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vp='vagrant provision'
+alias vd='vagrant destroy'
+alias vup='vagrant up --provision'
