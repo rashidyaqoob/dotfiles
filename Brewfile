@@ -1,5 +1,4 @@
 brew 'diff-so-fancy'
-brew 'fish'
 brew 'hugo'
 brew 'nvm'
 brew 'the_platinum_searcher'
