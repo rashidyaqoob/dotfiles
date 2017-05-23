@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " Completion
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Enhancement
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -21,6 +20,12 @@ Plug 'altercation/vim-colors-solarized'
 
 " UI
 Plug 'itchyny/lightline.vim'
+
+" Go
+Plug 'fatih/vim-go'
+
+" Rust
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Vi improved
@@ -241,10 +246,14 @@ nnoremap <c-h> <c-w><c-h>
 
 
 " Plugins
-" fzf
-nnoremap <C-p> :Files<cr>
-nnoremap <C-p>p :Buffers<cr>
+" ctrlp
+if executable('pt')
+  " Use ag over grep
+  set grepprg=pt\ --nogroup\ --nocolor
 
-nmap <leader><tab> <plug>(fzf-maps-n)
-xmap <leader><tab> <plug>(fzf-maps-x)
-omap <leader><tab> <plug>(fzf-maps-o)
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'pt %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif

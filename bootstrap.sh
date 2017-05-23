@@ -20,7 +20,6 @@ fi
 omf install nvm
 omf install pure
 omf install blt
-omf install fzf
 
 nvm install stable
 nvm alias default stable
