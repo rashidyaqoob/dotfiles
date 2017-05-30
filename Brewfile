@@ -6,7 +6,6 @@ brew 'youtube-dl'
 
 cask '1password'
 cask 'dropbox'
-cask 'flux'
 cask 'google-chrome'
 cask 'hipchat'
 cask 'keepingyouawake'

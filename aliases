@@ -12,6 +12,7 @@ alias nn='cd ~/Dropbox/notes'
 alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
 alias copykeys='cat ~/.ssh/id_rsa.pub | pbcopy'
 alias path='echo $PATH | tr ":" "\n"'
+alias phpunit='./vendor/bin/phpunit'
 
 alias vu='vagrant up'
 alias vh='vagrant halt'

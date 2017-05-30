@@ -19,13 +19,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 
 " UI
-Plug 'itchyny/lightline.vim'
-
-" Go
-Plug 'fatih/vim-go'
-
-" Rust
-Plug 'rust-lang/rust.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Vi improved
@@ -257,3 +252,7 @@ if executable('pt')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+
+" NERDTree
+let NERDTreeIgnore = ['\.pyc$']
