@@ -21,6 +21,10 @@ Plug 'altercation/vim-colors-solarized'
 " UI
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Markdown
+Plug 'gabrielelana/vim-markdown'
+Plug 'reedes/vim-pencil'
 call plug#end()
 
 " Vi improved

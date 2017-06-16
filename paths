@@ -1,5 +1,7 @@
 export PATH=/Applications/XAMPP/bin:$PATH
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
+export GOPATH=$HOME/go
+
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"

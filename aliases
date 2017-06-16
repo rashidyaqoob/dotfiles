@@ -15,6 +15,7 @@ alias path='echo $PATH | tr ":" "\n"'
 alias phpunit='./vendor/bin/phpunit'
 
 alias vu='vagrant up'
+alias vs='vagrant ssh'
 alias vh='vagrant halt'
 alias vp='vagrant provision'
 alias vd='vagrant destroy'
