@@ -5,6 +5,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Enhancement
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/vim-easy-align'
+Plug 'editorconfig/editorconfig-vim'
 
 " Motion
 Plug 'tpope/vim-surround'
@@ -25,6 +27,12 @@ Plug 'vim-airline/vim-airline-themes'
 " Markdown
 Plug 'gabrielelana/vim-markdown'
 Plug 'reedes/vim-pencil'
+
+" Drupal
+Plug 'lumiliet/vim-twig'
+
+" Go
+Plug 'fatih/vim-go'
 call plug#end()
 
 " Vi improved

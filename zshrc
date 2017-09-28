@@ -12,4 +12,4 @@ source $HOME/Code/personal/dotfiles/funcs
 source $HOME/Code/personal/dotfiles/paths
 
 setopt auto_cd
-cdpath=($HOME/Code/work $HOME/Code/personal)
+cdpath=($HOME/Code $HOME/Code/work $HOME/Code/personal)
