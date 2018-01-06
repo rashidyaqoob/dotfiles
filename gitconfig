@@ -1,0 +1,57 @@
+[user]
+	name = Bassam Ismail
+	email = skippednote@gmail.com
+
+[credential]
+	helper = cache
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+
+[push]
+	branch = current
+	default = current
+
+[pull]
+	branch = current
+	default = simple
+
+[blame]
+	date = short
+
+[alias]
+	a   = add
+	aa  = add --all
+	cl  = clone
+	c   = commit -v
+	cm  = commit -s -m
+	cam = commit -s -am
+	co  = checkout
+	cob = checkout -b
+	d   = diff
+	pu  = push
+	pl  = pull
+	pr  = pull --rebase
+	s   = status
+	sb  = status -sb
+	rv  = remote -v
+	rhh = reset --hard HEAD
+	rhs = reset --soft HEAD
+	rhm = reset --mixed HEAD
+	lp  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	bl  = branch -l
+	br  = branch -r
+	log = log --show-signature
+	cfd = clean -fd
+	cf = clean -f
+	ignore = update-index --assume-unchanged
+	fo = fetch origin
+	sl = stash list
+	sp = stash pop
+	sc = stash clear
+	standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
+
