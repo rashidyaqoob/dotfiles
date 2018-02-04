@@ -2,21 +2,13 @@ alias l="ls -lh"
 alias a="ls -alh"
 alias c='clear'
 alias g="git"
-alias v="vim"
+alias v="vi"
 
-alias d="cd ~/Code/personal/dotfiles"
-alias w='cd ~/Code/work'
-alias p='cd ~/Code/personal'
-alias nn='cd ~/Dropbox/notes'
+alias d="cd ~/r/personal/dotfiles"
 
 alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
 alias copykeys='cat ~/.ssh/id_rsa.pub | pbcopy'
 alias path='echo $PATH | tr ":" "\n"'
-alias phpunit='./vendor/bin/phpunit'
 
-alias vu='vagrant up'
-alias vs='vagrant ssh'
-alias vh='vagrant halt'
-alias vp='vagrant provision'
-alias vd='vagrant destroy'
-alias vup='vagrant up --provision'
+alias xcc='xclip -selection clipboard'
+alias xcv='xclip -selection clipboard -o'

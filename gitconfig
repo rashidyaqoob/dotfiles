@@ -10,15 +10,15 @@
   ui = auto
 
 [core]
-  excludesfile = /Users/skippednote/.gitignore_global
-  pager = diff-so-fancy | less --tabs=4 -RFX
-  editor = /usr/bin/vim
+  excludesfile = /home/skippednote/.gitignore_global
+  editor = /usr/bin/vi
+  fileMode = false
 
 [help]
   autocorrect = 1
 
 [commit]
-  template = /Users/skippednote/.gitmessage
+  template = /home/skippednote/.gitmessage
 
 [push]
   branch = current
@@ -30,9 +30,6 @@
 
 [blame]
   date = short
-
-[credential]
-  helper = osxkeychain
 
 [github]
   user = skippednote
@@ -68,9 +65,3 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
