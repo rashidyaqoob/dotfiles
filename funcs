@@ -4,7 +4,7 @@ function mcd {
 }
 
 function rf {
-  mv $1 ~/.Trash
+  gvfs-trash $1
 }
 
 function phps {
