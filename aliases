@@ -3,12 +3,12 @@ alias a="ls -alh"
 alias c='clear'
 alias g="git"
 alias v="vi"
+alias xcc='xclip -selection clipboard'
+alias xcv='xclip -selection clipboard -o'
 
 alias d="cd ~/r/personal/dotfiles"
 
-alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
-alias copykeys='cat ~/.ssh/id_rsa.pub | pbcopy'
-alias path='echo $PATH | tr ":" "\n"'
 
-alias xcc='xclip -selection clipboard'
-alias xcv='xclip -selection clipboard -o'
+alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
+alias copykeys='cat ~/.ssh/id_rsa.pub | xcc'
+alias path='echo $PATH | tr ":" "\n"'
