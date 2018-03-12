@@ -65,3 +65,5 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
+[gpg]
+	program = gpg2

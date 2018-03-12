@@ -1,4 +1,2 @@
 export PATH=$PATH:$HOME/.composer/vendor/bin
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export PATH=~/.npm-global/bin:$PATH
