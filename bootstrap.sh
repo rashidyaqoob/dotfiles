@@ -13,26 +13,8 @@ if [ ! -d $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
-if [ ! -d $HOME/.oh-my-zsh/custom/plugins/k ]; then
-  git clone https://github.com/supercrabtree/k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/k
-fi
-
 ln -sfn $PWD/zshrc $HOME/.zshrc
 
 ln -sfn $PWD/gitconfig $HOME/.gitconfig
 ln -sfn $PWD/gitignore_global $HOME/.gitignore_global
 ln -sfn $PWD/gitmessage $HOME/.gitmessage
-
-ln -sfn $PWD/vimrc $HOME/.vimrc
-
-if [ ! -f ~/.vim/autoload/plug.vim ]; then
-  echo "Installing vim-plug."
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
-
-if [ ! -d $HOME/.nvm ]; then
-  mkdir $HOME/.nvm
-  nvm install stable
-  nvm alias default stable
-fi

@@ -1,5 +1,5 @@
 export ZSH=/home/skippednote/.oh-my-zsh
-ZSH_THEME="refined"
+ZSH_THEME="avit"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
