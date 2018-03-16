@@ -1,2 +1,4 @@
 export PATH=$PATH:$HOME/.composer/vendor/bin
 export PATH=~/.npm-global/bin:$PATH
+
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"

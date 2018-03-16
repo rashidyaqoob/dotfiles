@@ -1,6 +1,7 @@
 [user]
   name = Bassam Ismail
   email = skippednote@gmail.com
+  signingkey = 66BD13D1
 
 [color]
   branch = auto
@@ -19,6 +20,7 @@
 
 [commit]
   template = /home/skippednote/.gitmessage
+  gpgsign = true
 
 [push]
   branch = current
@@ -65,5 +67,3 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
-[gpg]
-	program = gpg2
