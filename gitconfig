@@ -18,6 +18,9 @@
 [help]
   autocorrect = 1
 
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
 [commit]
   template = /home/skippednote/.gitmessage
   gpgsign = true
