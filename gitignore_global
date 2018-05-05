@@ -7,3 +7,4 @@ elm-stuff
 npm-debug.log*
 yarn-error.log
 *.local.settings.php
+.lando.yml
