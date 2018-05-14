@@ -3,8 +3,6 @@ node_modules
 build
 elm-stuff
 .idea
-.vscode
 npm-debug.log*
 yarn-error.log
 *.local.settings.php
-.lando.yml
