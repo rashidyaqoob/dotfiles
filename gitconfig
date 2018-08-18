@@ -1,7 +1,7 @@
 [user]
   name = Bassam Ismail
   email = skippednote@gmail.com
-  signingkey = 6FE151559F58F8AE
+  signingkey = 82C88DE093C73329CB9767BE6B4FA0A2B53ACA0B
 
 [color]
   branch = auto
@@ -14,6 +14,7 @@
   excludesfile = /home/skippednote/.gitignore_global
   editor = /usr/bin/vi
   fileMode = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [help]
   autocorrect = 1

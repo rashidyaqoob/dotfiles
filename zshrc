@@ -12,5 +12,8 @@ source $HOME/r/personal/dotfiles/funcs
 source $HOME/r/personal/dotfiles/paths
 
 setopt auto_cd
-cdpath=($HOME/r $HOME/r/work $HOME/r/personal)
+cdpath=($HOME $HOME/r $HOME/r/work $HOME/r/personal)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

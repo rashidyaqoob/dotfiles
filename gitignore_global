@@ -6,3 +6,5 @@ elm-stuff
 npm-debug.log*
 yarn-error.log
 *.local.settings.php
+.vscode
+package-lock.json

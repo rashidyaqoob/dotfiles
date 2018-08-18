@@ -39,6 +39,13 @@ function createdrupal {
 		--no-progress \
 		--no-interaction
 }
+function zzi {
+  xrandr --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1600x900 --pos 1928x0 --rotate normal --output DP-2 --off
+}
+
+function zzo {
+xrandr --output VIRTUAL1 --off --output DP1 --off --output eDP1 --primary --mode 1600x900 --pos 0x0 --rotate normal --output DP2 --off
+}
 
 function blt() {
   if [ "`git rev-parse --show-cdup 2> /dev/null`" != "" ]; then

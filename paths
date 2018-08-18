@@ -1,2 +1,24 @@
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+export PATH=$PATH:$HOME/.yarn/bin
+
+export PATH=$PATH:$HOME/.composer/vendor/bin
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
+export PATH=$PATH:$HOME/bin/flutter/bin
+
+export PATH=$PATH:$HOME/Android/Sdk/platform-tools
+export PATH=$PATH:$HOME/Android/Sdk/tools/bin
+
+export ELECTRON_TRASH=gio
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export PATH=$PATH:$HOME/.cargo/bin
