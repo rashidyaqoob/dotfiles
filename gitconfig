@@ -1,7 +1,7 @@
 [user]
   name = Bassam Ismail
   email = skippednote@gmail.com
-  signingkey = 82C88DE093C73329CB9767BE6B4FA0A2B53ACA0B
+  signingkey = 85E5893E0C38422021F0A355A0BB8C97C8C27B93
 
 [color]
   branch = auto
@@ -12,7 +12,7 @@
 
 [core]
   excludesfile = /home/skippednote/.gitignore_global
-  editor = /usr/bin/vi
+  editor = /usr/bin/vim
   fileMode = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 
@@ -40,6 +40,9 @@
 [github]
   user = skippednote
 
+[remote "origin"]
+	prune = true
+
 [alias]
   a   = add
   aa  = add --all
@@ -51,6 +54,8 @@
   cob = checkout -b
   d   = diff
   pu  = push
+  puh = push origin HEAD
+  puhf = push origin HEAD --force-with-lease
   pl  = pull
   pr  = pull --rebase
   s   = status
@@ -71,3 +76,4 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
+

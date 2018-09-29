@@ -1,5 +1,5 @@
 export ZSH=/home/skippednote/.oh-my-zsh
-ZSH_THEME="avit"
+ZSH_THEME="spaceship"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -14,6 +14,4 @@ source $HOME/r/personal/dotfiles/paths
 setopt auto_cd
 cdpath=($HOME $HOME/r $HOME/r/work $HOME/r/personal)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
