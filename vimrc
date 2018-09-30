@@ -25,6 +25,10 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'edkolev/tmuxline.vim'
 Plug 'joonty/vdebug'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-eunuch'
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " General
