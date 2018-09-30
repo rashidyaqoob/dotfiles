@@ -14,13 +14,13 @@
   excludesfile = /home/skippednote/.gitignore_global
   editor = /usr/bin/vim
   fileMode = false
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = diff-so-fancy | less --tabs=4 -RFX
 
 [help]
   autocorrect = 1
 
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
 
 [commit]
   template = /home/skippednote/.gitmessage
@@ -41,7 +41,7 @@
   user = skippednote
 
 [remote "origin"]
-	prune = true
+  prune = true
 
 [alias]
   a   = add
@@ -75,5 +75,4 @@
   sl = stash list
   sp = stash pop
   sc = stash clear
-  standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit 
-
+  standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit
