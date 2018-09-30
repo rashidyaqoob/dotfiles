@@ -14,6 +14,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'plasticboy/vim-markdown', { 'for': ['md', 'markdown'] }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -27,7 +28,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'joonty/vdebug'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
@@ -157,3 +158,13 @@ let g:vdebug_options= {
 \      },
 \      'idekey': 'vdebug',
 \}
+
+" emmet
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+" jsx
+let g:jsx_ext_required = 0
