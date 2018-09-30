@@ -1,0 +1,32 @@
+alias l="ls -lh"
+alias a="ls -alh"
+alias c='clear'
+alias v="vim"
+
+alias d="cd ~/r/personal/dotfiles"
+alias reload="source ~/.zshrc"
+alias path='echo $PATH | tr ":" "\n"'
+
+alias g="git"
+alias gbc='git checkout $(git branch -a | cut -c 3- | fzf)'
+
+alias xcc='xclip -selection clipboard'
+alias xcv='xclip -selection clipboard -o'
+
+alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
+alias copykeys='cat ~/.ssh/id_rsa.pub | xcc'
+
+alias zzz='xrandr --output eDP-1 --mode 1600x900 --scale 1x1'
+
+alias vu='vagrant up'
+alias vs='vagrant ssh'
+alias vh='vagrant halt'
+alias vp='vagrant provision'
+
+alias t="tmux -u"
+alias tn='tmux -u new -s'
+alias tl='tmux -u ls'
+alias ta='tmux -u a -t'
+alias tk='tmux -u kill-session -t'
+
+alias yt='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl'
