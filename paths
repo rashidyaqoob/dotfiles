@@ -2,6 +2,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 export ELECTRON_TRASH=gio
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.yarn/bin
 export PATH=$PATH:$HOME/.composer/vendor/bin

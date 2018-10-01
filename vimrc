@@ -10,9 +10,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'plasticboy/vim-markdown', { 'for': ['md', 'markdown'] }
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
@@ -30,6 +31,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 call plug#end()
 
 " General
@@ -52,6 +57,8 @@ set listchars=tab:→\ ,trail:·,extends:❯,precedes:❮
 set backspace=indent,eol,start
 set wildmenu
 set wildmode=full
+set autoread
+au FocusGained * :checktime
 
 " Color
 colorscheme nord
@@ -118,9 +125,8 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
-" Go
-let g:go_fmt_fail_silently = 1
-let g:go_fmt_command = "goimports"
+" Rust
+let g:rustfmt_autosave = 1
 
 " Drupal
 augroup filetypedetect
@@ -168,3 +174,17 @@ let g:user_emmet_settings = {
 
 " jsx
 let g:jsx_ext_required = 0
+
+" languages client
+set hidden
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    \ }
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
+let g:LanguageClient_loggingLevel = 'DEBUG'
+let g:deoplete#enable_at_startup = 1
