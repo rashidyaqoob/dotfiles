@@ -1,7 +1,8 @@
-alias l="ls -lh"
-alias a="ls -alh"
+alias l="exa -lG --git"
+alias a="exa -laG --git"
 alias c='clear'
 alias v="vim"
+alias o="xdg-open"
 
 alias d="cd ~/r/personal/dotfiles"
 alias reload="source ~/.zshrc"

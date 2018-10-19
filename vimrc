@@ -125,9 +125,6 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
-" Rust
-let g:rustfmt_autosave = 1
-
 " Drupal
 augroup filetypedetect
   au! BufRead,BufNewFile *.module setfiletype php
@@ -150,6 +147,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \   'markdown': ['prettier'],
       \   'javascript': ['prettier'],
+      \   'json': ['prettier'],
       \   'css': ['prettier'],
       \   'scss': ['prettier'],
       \}
@@ -188,3 +186,6 @@ nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
 let g:LanguageClient_loggingLevel = 'DEBUG'
 let g:deoplete#enable_at_startup = 1
+
+" Rust
+let g:rustfmt_autosave = 1
