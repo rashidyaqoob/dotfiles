@@ -1,0 +1,41 @@
+### Listing of software I use that need to be automated for installation and
+configuration.
+- exa
+- vim
+- tmux
+- docker-ce
+- vscode
+- slack
+- google-chrome
+- mailspring
+- keybase
+- obs
+- vlc
+- rust
+- php
+- composer
+- zsh
+- curl
+- bsdtar
+- nfs-server
+- vagrant
+- virtualbox
+- zoomus
+- chrome-gnome-shell
+- tweak-tools
+  - caffeine
+  - clipboard indicator
+  - dash to dock
+  - hide activities
+  - button
+  - no title bar
+  - open weather
+  - status area horizontal space
+  - user themes
+  - sound input and output devices
+  - alternate tab
+  - nothing to say
+  - random
+  - wallpaper
+  - window is ready notification remover
+  - arc-theme
