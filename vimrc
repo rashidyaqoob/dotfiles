@@ -26,7 +26,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'edkolev/tmuxline.vim'
-Plug 'joonty/vdebug'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
@@ -153,17 +152,6 @@ let g:ale_fixers = {
       \   'css': ['prettier'],
       \   'scss': ['prettier'],
       \}
-
-" vdebug
-let g:vdebug_options= {
-\      'break_on_open': 0,
-\      'debug_file_level': 2,
-\      'debug_file': '/tmp/vdebug.log',
-\      'path_maps': {
-\              '/var/www/newell': '~/r/work/Newell',
-\      },
-\      'idekey': 'vdebug',
-\}
 
 " emmet
 let g:user_emmet_settings = {
