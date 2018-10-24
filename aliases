@@ -4,7 +4,7 @@ alias c='clear'
 alias v="vim"
 alias o="xdg-open"
 
-alias d="cd ~/r/personal/dotfiles"
+alias d="cd ~/code/personal/dotfiles"
 alias reload="source ~/.zshrc"
 alias path='echo $PATH | tr ":" "\n"'
 
