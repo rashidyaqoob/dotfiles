@@ -63,6 +63,7 @@ au FocusGained * :checktime
 " Color
 colorscheme nord
 set background=dark
+" This breaks colors in tmux
 " set termguicolors
 set cursorline
 set colorcolumn=+1
@@ -71,6 +72,7 @@ let g:airline_theme='nord'
 let g:nord_italic_comments = 1
 let g:nord_uniform_diff_background = 1
 let g:nord_cursor_line_number_background = 1
+let g:nord_comment_brightness = 20
 let g:tmuxline_powerline_separators = 0
 
 " Mouse
