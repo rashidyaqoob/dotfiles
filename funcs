@@ -28,12 +28,12 @@ function getremote {
 }
 
 function createdrupal {
-	composer create-project \
-		drupal-composer/drupal-project:8.x-dev \
-		$1 \
-		--prefer-dist \
-		--no-progress \
-		--no-interaction
+  composer create-project \
+    drupal-composer/drupal-project:8.x-dev \
+    $1 \
+    --prefer-dist \
+    --no-progress \
+    --no-interaction
 }
 
 function blt() {

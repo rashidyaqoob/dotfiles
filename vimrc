@@ -14,6 +14,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'plasticboy/vim-markdown', { 'for': ['md', 'markdown'] }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
