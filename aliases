@@ -1,5 +1,5 @@
-alias l="exa -lG --git"
-alias a="exa -laG --git"
+alias l="ls -lh"
+alias a="ls -lha"
 alias c='clear'
 alias v="vim"
 alias o="xdg-open"
