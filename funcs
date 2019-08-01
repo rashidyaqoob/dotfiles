@@ -50,7 +50,3 @@ function blt() {
     return 1
   fi
 }
-
-function cn() {
-  cargo new $2-$1 --name $1
-}
