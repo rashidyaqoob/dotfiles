@@ -1,4 +1,4 @@
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
-export ELECTRON_TRASH=gio
+export PATH=$PATH:$HOME/Library/Python/2.7/bin
