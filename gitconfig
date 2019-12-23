@@ -17,9 +17,8 @@
 [help]
   autocorrect = 1
 
-[commit]
-  template = /home/skippednote/.gitmessage
-
+# [commit]
+#   template = /home/skippednote/.gitmessage
 [push]
   branch = current
   default = current

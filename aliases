@@ -9,8 +9,7 @@ alias d="cd ~/code/personal/dotfiles"
 alias reload="source ~/.zshrc"
 alias path='echo $PATH | tr ":" "\n"'
 
-alias g="hub"
-alias git="hub"
+alias g="git"
 alias gbc='git checkout $(git branch -a | cut -c 3- | fzf)'
 
 alias genkeys='ssh-keygen -t rsa -b 4096 -C "skippednote@gmail.com"'
