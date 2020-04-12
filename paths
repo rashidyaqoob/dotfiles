@@ -1,12 +1,10 @@
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
-export PATH=$PATH:$HOME/.cargo/bin
-
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# BEGIN SNIPPET: Platform.sh CLI configuration
-HOME=${HOME:-'/Users/skippednote'}
+# platformsh
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
-if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi
