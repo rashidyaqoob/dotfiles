@@ -4,7 +4,6 @@ tap "homebrew/core"
 
 brew "bat"
 brew "exa"
-brew "fd"
 brew "mas"
 brew "nvm"
 
