@@ -10,13 +10,19 @@
   ui = auto
 
 [core]
-  editor = /usr/bin/vim
+  editor = code -rw
   fileMode = false
   pager = diff-so-fancy | less --tabs=4 -RFX
   excludesfile = /Users/skippednote/.gitignore
 
 [help]
   autocorrect = 1
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 
 # [commit]
 #   template = /home/skippednote/.gitmessage
@@ -70,5 +76,9 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit
-[icdiff]
-	options = --highlight --line-numbers
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
