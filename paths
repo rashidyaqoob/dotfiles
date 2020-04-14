@@ -8,3 +8,6 @@ export NVM_DIR="$HOME/.nvm"
 # platformsh
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi
+
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
