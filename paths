@@ -11,3 +11,6 @@ if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/she
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
+
+# bat
+export BAT_THEME=GitHub
