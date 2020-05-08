@@ -12,17 +12,20 @@
 [core]
   editor = code -rw
   fileMode = false
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta --theme='GitHub'
   excludesfile = /Users/skippednote/.gitignore
+
+[interactive]
+  diffFilter = delta --color-only
 
 [help]
   autocorrect = 1
 
 [merge]
-    tool = vscode
+  tool = vscode
 
 [mergetool "vscode"]
-    cmd = code --wait $MERGED
+  cmd = code --wait $MERGED
 
 # [commit]
 #   template = /home/skippednote/.gitmessage
@@ -77,6 +80,7 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit
+	b = !git branch -a | grep -v '^[\\*|HEAD]' | sed 's/remotes\\/[^\\/]*.//' | uniq | sk -m | xargs git checkout
 
 [diff]
     tool = vscode

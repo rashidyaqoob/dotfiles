@@ -11,3 +11,12 @@ if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/she
 
 # bat
 export BAT_THEME=GitHub
+
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
+
+# go
+export PATH=$PATH:$HOME/go/bin
+
+# skim
+SKIM_DEFAULT_COMMAND="fd --type f || git ls-tree -r --name-only HEAD || rg --files || find ."
