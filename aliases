@@ -6,6 +6,7 @@ alias o="open"
 alias ls="exa --git"
 alias tree="ls --tree"
 alias cat="bat"
+alias k="kubectl"
 
 alias d="cd ~/code/personal/dotfiles"
 alias reload="source ~/.zshrc"

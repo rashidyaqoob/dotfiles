@@ -20,3 +20,6 @@ export PATH=$PATH:$HOME/go/bin
 
 # skim
 SKIM_DEFAULT_COMMAND="fd --type f || git ls-tree -r --name-only HEAD || rg --files || find ."
+
+# composer
+export PATH=$PATH:$HOME/.composer/vendor/bin
