@@ -23,3 +23,6 @@ SKIM_DEFAULT_COMMAND="fd --type f || git ls-tree -r --name-only HEAD || rg --fil
 
 # composer
 export PATH=$PATH:$HOME/.composer/vendor/bin
+
+# python
+export PATH=$PATH:$HOME/Library/Python/3.7/bin
