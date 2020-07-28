@@ -16,3 +16,5 @@ source $HOME/code/personal/dotfiles/paths
 setopt auto_cd
 cdpath=($HOME $HOME/code $HOME/code/work $HOME/code/personal)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

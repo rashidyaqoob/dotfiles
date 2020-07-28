@@ -12,3 +12,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.
 # symlink files to $HOME
 ln -sfn $PWD/zshrc $HOME/.zshrc
 ln -sfn $PWD/gitconfig $HOME/.gitconfig
+ln -sfn $PWD/init.vim $HOME/.config/nvim/init.vim
+ln -sfn $PWD/tmux.conf $HOME/.tmux.conf

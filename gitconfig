@@ -10,25 +10,16 @@
   ui = auto
 
 [core]
-  editor = code -rw
+  editor = nvim
   fileMode = false
   pager = delta --theme='GitHub'
-  excludesfile = /Users/skippednote/.gitignore
+  excludesfile = /home/skippednote/.gitignore
 
 [interactive]
   diffFilter = delta --color-only
 
 [help]
   autocorrect = 1
-
-[merge]
-  tool = vscode
-
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
-
-# [commit]
-#   template = /home/skippednote/.gitmessage
 
 [push]
   branch = current
@@ -80,10 +71,6 @@
   sp = stash pop
   sc = stash clear
   standup = log --since=yesterday.0:00am --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --author='Bassam Ismail'  --abbrev-commit
-	b = !git branch -a | grep -v '^[\\*|HEAD]' | sed 's/remotes\\/[^\\/]*.//' | uniq | sk -m | xargs git checkout
-
-[diff]
-    tool = vscode
-
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+  b = !git branch -a | grep -v '^[\\*|HEAD]' | sed 's/remotes\\/[^\\/]*.//' | uniq | sk -m | xargs git checkout
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
