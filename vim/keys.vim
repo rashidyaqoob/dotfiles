@@ -1,5 +1,7 @@
 let mapleader=','
+tnoremap <Esc> <C-\><C-n>
 nnoremap <C-p> :ProjectFiles<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>f :Rg<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 noremap j gj
