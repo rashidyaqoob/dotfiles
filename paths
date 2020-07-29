@@ -1,3 +1,6 @@
+# editor
+export EDITOR="nvim"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
@@ -10,7 +13,7 @@ export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi
 
 # bat
-export BAT_THEME=GitHub
+export BAT_THEME=Dracula
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
@@ -26,3 +29,9 @@ export PATH=$PATH:$HOME/.composer/vendor/bin
 
 # python
 export PATH=$PATH:$HOME/Library/Python/3.7/bin
+
+# nvim
+export PATH=$PATH:/usr/local/Cellar/nvim/bin
+
+# fzf
+export FZF_DEFAULT_COMMAND='rg --files'
