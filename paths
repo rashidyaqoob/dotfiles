@@ -11,3 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # fzf
 export FZF_DEFAULT_COMMAND='rg --files'
+export PATH=$PATH:$HOME/.fzf/bin
+
+# gtk
+# export GDK_SCALE=2

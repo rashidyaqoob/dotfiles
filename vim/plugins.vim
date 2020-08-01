@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'kassio/neoterm'
 call plug#end()
 
 function! s:find_git_root()

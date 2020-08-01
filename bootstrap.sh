@@ -13,4 +13,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.
 ln -sfn $PWD/zshrc $HOME/.zshrc
 ln -sfn $PWD/gitconfig $HOME/.gitconfig
 ln -sfn $PWD/init.vim $HOME/.config/nvim/init.vim
+ln -sfn $PWD/i3.config $HOME/.config/i3/config
+ln -sfn $PWD/i3status.config $HOME/.config/i3status/config
 ln -sfn $PWD/tmux.conf $HOME/.tmux.conf
