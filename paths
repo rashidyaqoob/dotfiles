@@ -1,5 +1,5 @@
 # bat
-export BAT_THEME=Dracula
+export BAT_THEME=1337
 
 # nvim
 export PATH=$PATH:/usr/local/bin/nvim/bin
@@ -12,6 +12,4 @@ export NVM_DIR="$HOME/.nvm"
 # fzf
 export FZF_DEFAULT_COMMAND='rg --files'
 export PATH=$PATH:$HOME/.fzf/bin
-
-# gtk
-# export GDK_SCALE=2
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
