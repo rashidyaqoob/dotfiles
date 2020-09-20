@@ -13,3 +13,5 @@ set relativenumber
 set shortmess+=c
 set showmode
 let g:airline_theme='ayu_mirage'
+hi! Normal guibg=NONE
+" let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.5 } }

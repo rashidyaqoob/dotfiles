@@ -16,6 +16,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'kassio/neoterm'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 function! s:find_git_root()

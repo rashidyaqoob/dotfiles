@@ -22,3 +22,7 @@ nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
+nnoremap <leader>pi :so % <bar> PlugInstall<CR> <bar> :q<CR>
+nnoremap <leader>pc :so % <bar> PlugClean<CR> <bar> :q<CR>
+nnoremap <leader>pu :so % <bar> PlugUpdate<CR> <bar> :q<CR>
+nnoremap <leader>pd :so % <bar> PlugUpgrade<CR>
