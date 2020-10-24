@@ -2,7 +2,7 @@ set t_Co=256
 syntax on
 syntax enable
 syntax enable
-set termguicolors
+" set termguicolors
 colorscheme dracula
 set background=dark
 set cursorline
