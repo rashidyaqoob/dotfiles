@@ -4,7 +4,7 @@ HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 # ZSH_TMUX_AUTOSTART="true"
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions tmux)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 autoload -U compinit && compinit
