@@ -1,6 +1,6 @@
 [user]
   name = Bassam Ismail
-  email = skippednote@gmail.com
+  email = skippednote@skippednote.dev
 
 [color]
   branch = auto
@@ -10,10 +10,10 @@
   ui = auto
 
 [core]
-  editor = nvim
-  fileMode = false
-  pager = delta --theme='Dracula'
-  excludesfile = /Users/skippednote/.gitignore
+  editor = vim
+  fileMode = true  
+  pager = delta
+  excludesfile = $HOME/.gitignore
 
 [interactive]
   diffFilter = delta --color-only
@@ -38,8 +38,8 @@
 [github]
   user = skippednote
 
-# [url "ssh://git@github.com/"]
-#   insteadOf = https://github.com/
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
 
 [remote "origin"]
   prune = true
@@ -82,9 +82,6 @@
 
 [delta]
   features = side-by-side line-numbers decorations
-  syntax-theme = Dracula
-  plus-style = syntax "#003800"
-  minus-style = syntax "#3f0001"
   side-by-side = true
 [delta "decorations"]
   commit-decoration-style = bold yellow box ul

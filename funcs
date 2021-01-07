@@ -28,7 +28,7 @@ function getremote {
 }
 
 function createdrupal {
-  composer create-project drupal/recommended-project
+  composer create-project drupal/recommended-project $1
 }
 
 function blt() {
