@@ -17,11 +17,9 @@ export PATH=$PATH:$HOME/.composer/vendor/bin
 # python
 export PATH=$PATH:$HOME/Library/Python/3.8/bin
 
-# nvim
-export PATH=$PATH:/usr/local/nvim/bin
+# ddev
+export PHP_ID=php7_3; export PATH="/Applications/DevDesktop/php7_3_x64/bin:/Applications/DevDesktop/mysql/bin:/Applications/DevDesktop/tools:$PATH"
 
-
-# BEGIN SNIPPET: Platform.sh CLI configuration
-HOME=${HOME:-'/Users/skippednote'}
-export PATH="$HOME/"'.platformsh/bin':"$PATH"
-if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+# brew
+eval $(/opt/homebrew/bin/brew shellenv)
+eval $(/opt/homebrew/bin/brew shellenv)

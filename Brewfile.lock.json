@@ -2,16 +2,16 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "c3034215ab5a315fbde19cf2524a257d4578f692"
+        "revision": "6ed289763915e0ecd3fc7a64168e3c8395dc832c"
       },
       "homebrew/cask": {
-        "revision": "1dd02d463cf9210e6c61a0ab2f52031385b748b6"
+        "revision": "3e0cd2c7026976b513ee5a600734212a039c2865"
       },
       "homebrew/cask-fonts": {
-        "revision": "368aadf59ee1f193eb18f43b2e33ba022dac25fd"
+        "revision": "7cf22a6e9ad630ad0ddc11800ec931866c865471"
       },
       "homebrew/core": {
-        "revision": "9f5be824e33871ab8900b51299d20aa67079e801"
+        "revision": "c3d1227f2ae03ebfba3dfa26587673d58c8e934f"
       }
     },
     "brew": {
@@ -19,7 +19,7 @@
         "version": "0.17.1",
         "bottle": {
           "cellar": ":any_skip_relocation",
-          "prefix": "/usr/local",
+          "prefix": "/opt/homebrew",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/bat-0.17.1.big_sur.bottle.tar.gz",
@@ -48,7 +48,7 @@
         "version": "0.9.0_2",
         "bottle": {
           "cellar": ":any_skip_relocation",
-          "prefix": "/usr/local",
+          "prefix": "/opt/homebrew",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/exa-0.9.0_2.big_sur.bottle.tar.gz",
@@ -73,7 +73,7 @@
         "version": "0.5.1",
         "bottle": {
           "cellar": ":any_skip_relocation",
-          "prefix": "/usr/local",
+          "prefix": "/opt/homebrew",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/git-delta-0.5.1.big_sur.bottle.tar.gz",
@@ -102,7 +102,7 @@
         "version": "0.48.0",
         "bottle": {
           "cellar": ":any_skip_relocation",
-          "prefix": "/usr/local",
+          "prefix": "/opt/homebrew",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/starship-0.48.0.big_sur.bottle.tar.gz",
@@ -138,7 +138,7 @@
         }
       },
       "cloudflare-warp": {
-        "version": "1.2.1989,20201119.2",
+        "version": "1.2.2278,20210106.4",
         "options": {
           "full_name": "cloudflare-warp"
         }
@@ -156,7 +156,7 @@
         }
       },
       "google-chrome": {
-        "version": "87.0.4280.88,4280.88",
+        "version": "88.0.4324.96,4324.96",
         "options": {
           "full_name": "google-chrome"
         }
@@ -192,7 +192,7 @@
         }
       },
       "slack": {
-        "version": "4.12.0",
+        "version": "4.12.2",
         "options": {
           "full_name": "slack"
         }
@@ -220,15 +220,21 @@
         "options": {
           "full_name": "zoom"
         }
+      },
+      "rectangle": {
+        "version": "0.42,47",
+        "options": {
+          "full_name": "rectangle"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.7.4",
-        "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "9f5be824e33871ab8900b51299d20aa67079e801",
+        "HOMEBREW_VERSION": "2.7.5",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "c3d1227f2ae03ebfba3dfa26587673d58c8e934f",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"

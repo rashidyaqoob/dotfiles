@@ -1,4 +1,4 @@
-export ZSH=~/.oh-my-zsh
+export ZSH="/Users/rashid/.oh-my-zsh"
 eval "$(starship init zsh)"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"

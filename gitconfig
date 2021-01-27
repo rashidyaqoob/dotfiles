@@ -1,6 +1,6 @@
 [user]
-  name = Bassam Ismail
-  email = skippednote@skippednote.dev
+  name = Rashid Yaqoob
+  email = raashidyaqoob@gmail.com
 
 [color]
   branch = auto
@@ -10,10 +10,10 @@
   ui = auto
 
 [core]
-  editor = vim
-  fileMode = true  
-  pager = delta
-  excludesfile = $HOME/.gitignore
+  editor = code -rw
+  fileMode = false
+  pager = delta --theme='GitHub'
+  excludesfile = /Users/rashid/.gitignore
 
 [interactive]
   diffFilter = delta --color-only
@@ -34,12 +34,6 @@
 
 [blame]
   date = short
-
-[github]
-  user = skippednote
-
-[url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
 
 [remote "origin"]
   prune = true
